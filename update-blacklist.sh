@@ -3,6 +3,8 @@
 # usage update-blacklist.sh <configuration file>
 # eg: update-blacklist.sh /etc/ipset-blacklist/ipset-blacklist.conf
 #
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 function exists() { command -v "$1" >/dev/null 2>&1 ; }
 
 if [[ -z "$1" ]]; then
